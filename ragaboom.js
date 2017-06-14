@@ -23,13 +23,13 @@ THE SOFTWARE.
 */
 
 var RB = {};
-
+/* function constructor for a Scene prototype? */
 RB.Scene = function(canvasObj, loopTime) {
 	
 	if(!canvasObj){
 		throw "RB.Scene(canvasObject): You must specify a canvas object";
 	}
-	
+	/* looptime seems to be related to animations */
 	if(!loopTime){
 		loopTime = 24;
 	}
@@ -58,6 +58,7 @@ RB.Scene = function(canvasObj, loopTime) {
 	var dX=0, dY=0;
 
 	// collidable objects
+	/* Seems to be more related to the framework's involvement in games */
 	var colObjects = [];
 	
 	var draggableObjects = [];
